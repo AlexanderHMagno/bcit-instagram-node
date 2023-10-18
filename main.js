@@ -6,22 +6,14 @@ const { unzip, readDir, grayScale } = require("./IOhandler");
  * File Name: main.js
  * Description:
  *
- * Created Date:
- * Author:
+ * Created Date:October 17th
+ * Author: Alexander Hortua
  *
  */
 
 const zipFilePath = path.join(__dirname, "myfile.zip");
 const pathUnzipped = path.join(__dirname, "unzipped");
 const pathProcessed = path.join(__dirname, "grayscaled");
-
-// IOhandler.unzip(zipFilePath, pathUnzipped);
-// IOhandler.readDir(pathUnzipped);
-
-// IOhandler.grayScale(
-//   path.join("unzipped", "in.png"),
-//   path.join(pathProcessed, "in.png")
-// );
 
 Promise.resolve()
   .then(() => unzip(zipFilePath, pathUnzipped))
